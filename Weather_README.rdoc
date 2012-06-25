@@ -1,0 +1,46 @@
+# Webxml::Wearher
+=======
+支持下列操作。有关正式定义，请查看服务说明。
+# http://webservice.webxml.com.cn/WebServices/WeatherWS.asmx
+函数说明：
+    getRegionCountry
+    获得国外国家名称和与之对应的ID
+    输入参数：无，返回数据：一维字符串数组。
+
+    getRegionDataset
+    获得中国省份、直辖市、地区；国家名称（国外）和与之对应的ID
+    输入参数：无，返回数据：DataSet。
+
+    getRegionProvince
+    获得中国省份、直辖市、地区和与之对应的ID
+    输入参数：无，返回数据：一维字符串数组。
+
+    getSupportCityDataset
+    获得支持的城市/地区名称和与之对应的ID
+    输入参数：theRegionCode = 省市、国家ID或名称，返回数据：DataSet。
+
+    getSupportCityString
+    获得支持的城市/地区名称和与之对应的ID
+    输入参数：theRegionCode = 省市、国家ID或名称，返回数据：一维字符串数组。
+
+    getWeather
+    获得天气预报数据
+    输入参数：城市/地区ID或名称，返回数据：一维字符串数组。
+
+ 调用方式：
+     Webxml::Weather.getRegionCountry
+     Webxml::Weather.getRegionDataset
+     Webxml::Weather.getRegionProvince
+     Webxml::Weather.getSupportCityDataset(:theRegionCode =>"广东")
+     Webxml::Weather.getSupportCityString(:theRegionCode =>"广东")
+     Webxml::Weather.getWeather(:theCityCode =>"深圳")
+     Webxml::Weather.getWeather(:theCityCode =>"深圳",:theUserID=>"60b372df83184440b0572baf8f4f85bb")
+     Webxml::Weather.getWeather(:theCityCode =>"深圳",:method=>"get")
+     Webxml::Weather.getWeather(:theCityCode =>"深圳",:method=>"post")
+
+
+     weather.getRegionCountry do |data,resp|
+        #TODO parse(data)
+     end
+#http://webservice.webxml.com.cn/WebServices/WeatherWS.asmx/getWeather?theCityCode=%E6%B7%B1%E5%9C%B3&theUserID=60b372df83184440b0572baf8f4f85bb
+Copyright (c) 2012 [name of plugin creator], released under the MIT license
