@@ -1,0 +1,11 @@
+Webxml-sdk
+==========
+web服务接口(http://www.webxml.com.cn/)
+
+1.天气查询
+ #详细见-Weather_README.rdoc
+   调用方式：
+   Webxml::Weather.getWeather(:theCityCode =>"深圳")
+2.TODO ...
+
+Copyright (c) 2012 [foyoto of plugin creator], released under the MIT license
