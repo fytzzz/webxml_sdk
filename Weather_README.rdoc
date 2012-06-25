@@ -42,5 +42,5 @@
      weather.getRegionCountry do |data,resp|
         #TODO parse(data)
      end
-#http://webservice.webxml.com.cn/WebServices/WeatherWS.asmx/getWeather?theCityCode=%E6%B7%B1%E5%9C%B3&theUserID=60b372df83184440b0572baf8f4f85bb
-Copyright (c) 2012 [name of plugin creator], released under the MIT license
+
+Copyright (c) 2012 [foyoto of plugin creator], released under the MIT license
